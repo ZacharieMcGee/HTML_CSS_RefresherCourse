@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  background: #0F172A;
+  color: #bdc1c6;
+  /* padding: 14px; */
+  min-height: 100vh;
+
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+nav, 
+section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+} 
+
+.profileImgContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid cyan;
+  overflow: hidden;
+}
+
+header section img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.greyLink {
+  color: lightgrey;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 14px;
+}
+
+.headerText {
+  font-size: 4em;
+  font-family: 'Times New Roman';
+  color: white;
+}
+
+.searchBar {
+  display: flex;
+  gap: 14px;
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 700px;
+
+  border: 1px solid #334155;
+  padding: 14px;
+  border-radius: 24px;
+}
+
+.searchBar:hover {
+  border-color: transparent;
+  background: #334155;
+}
+
+input {
+  /* getting rid of default styles */
+  background: transparent;
+  outline: none;
+  border: none;
+
+  color: white;
+  flex: 1;
+}
+
+.searchButtonsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.searchButtonsContainer button {
+  padding: 10px 14px;
+  border-radius: 4px;
+  background: #334155;
+  border: unset;
+  color: white;
+  cursor: pointer;
+}
+
+.searchButtonsContainer button:hover {
+  border: 1px solid darkgrey;
+}
+
+.langSelection {
+  font-size: 0.9em;
+}
+
+.langSelection span {
+  color: cyan;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > section {
+  padding: 14px;
+}
+
+footer > section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  border-top: 1px solid darkgrey;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footerLinks a {
+  cursor: pointer;
+}
+
+.iconButtonContainer {
+  display: flex; 
+  align-items: center;
+  gap: 14px;
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (min-width: 540px) {
+  footer > section:last-child {
+    flex-direction: row;
+  }
+}
